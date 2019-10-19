@@ -1,0 +1,58 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "",
+  "env": {
+    "EMAIL_FROM_ADDRESS": {
+      "required": true
+    },
+    "EMAIL_FROM_NAME": {
+      "required": true
+    },
+    "EMAIL_SMTP_API_MAILGUN": {
+      "required": true
+    },
+    "EMAIL_SMTP_DOMAIN_MAILGUN": {
+      "required": true
+    },
+    "FRONTEND_URL": {
+      "required": true
+    },
+    "JWT_EXPIRATION_IN_MINUTES": {
+      "required": true
+    },
+    "JWT_SECRET": {
+      "required": true
+    },
+    "MONGO_URI": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    },
+    "REDIS_HOST": {
+      "required": true
+    },
+    "REDIS_PORT": {
+      "required": true
+    },
+    "USE_REDIS": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "ciconia",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
